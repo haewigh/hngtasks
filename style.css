@@ -1,0 +1,125 @@
+*{
+  box-sizing: border-box;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.2rem;
+  margin: 1em 0;
+}
+.web {
+  background-color: #444;
+  color: #fff;
+  padding: 3px;
+}
+h2 {
+  text-align: center;
+  color: rgb(227, 143, 83);
+  
+}
+p, p + p {
+  padding-top: 0;
+  margin-top: 0;
+}
+
+img {
+  max-width: 80%;
+}
+.container {
+  width: 80%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+}
+nav ul {
+  list-style-type: none;
+  display: flex;
+}
+.nav-item + .nav-item {
+  margin-left: 1.5em;
+}
+nav a {
+  font-weight: bold;
+  transition: transform 2s 1s;
+}
+nav a:hover{
+  color: rgb(5, 152, 231);
+  transform: scale(1.2,1.2);
+}
+nav 
+a{
+  text-decoration: none;
+  color: #000;
+}
+
+.platforms {
+  width: 90%;
+  margin: 2em auto;
+}
+.platforms ul {
+  list-style-type: none;
+  margin: 0.5em 0;
+  padding: 0;
+}
+.platforms li {
+  margin-bottom: 0.5em;
+}
+.platforms a {
+  color: blue;
+}
+.about__me {
+  width: 60%;
+  /* font-size: 1rem; */
+  margin-left: 0.1rem
+}
+nav span{
+  font-weight: bold;
+  color: rgb(227, 143, 83);
+}
+.myself #name {
+  font-weight: bold;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.hero {
+  display: flex;
+  background-color: aliceblue;
+  justify-content: center;
+  line-height: 1.2em;
+  align-items: center;
+}
+.myimage {
+  width: 30%;
+}
+footer {
+  background-color: #444;
+  padding: 1em 1em 0.2em;
+  color: #fff;
+  ;
+}
+footer a {
+  color: #fff;
+}
+footer p{
+  text-align: center;
+}
+
+@media (max-width:768px){
+  body {
+    font-size: 1rem;
+  }
+  .hero {
+    display: block;
+  }
+  .myimage{
+    float: left;
+  }
+  .about__me{
+    width: 100%;
+  }
+
+}

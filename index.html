@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="container">
+    <div class="web">
+      <h2>My Website</h2>
+    </div>
+    <nav>
+      <ul>
+        <li class="nav-item"><a href="#">Home</a></li>
+        <li class="nav-item"><a href="#hero">About</a></li>
+        <li class="nav-item"><a href="#resources">Projects</a></li>
+        <li class="nav-item"><a href="#bottom">Contact</a></li>
+      </ul>
+      <ul>
+        <li class="nav-item"><div data-testid="currentDay"><p>It's <span id="day"></span></p></div></li>
+        <li class="nav-item"><div data-testid="currentTimeUTC"><p>The time is <span id="intro"></span></p></div></li>
+      </ul>
+    </nav>
+  </header>
+  <main class="container">
+    <section id="hero" class="hero">
+      <div class="myimage">
+        <img src="./images/ayredbgpass.jpg" alt="display-image" data-testid="slackProfilePicture">
+      </div>
+      <div class="about__me">
+        <div class="myself">
+          <h3>Hello and Welcome ✋</h3>
+          <p id="name" data-testid="slackDisplayName">I'm <span>Ayodele Okunade</span></p>
+          <p>I'm a frontend developer, proficient in HTML/CSS/JS. Currently learning React and looking to advance to fullstack. I write JavaScript and Python.
+          </p>
+        </div>
+        <div class="obj">
+          <h3>Career Goals</h3>
+          <p>As a starter in tech, of the web development ecosystem, I aspire to become an established professional in the next two years. I hope to have mastered the technologies, know how to work as a developer operating at the international level</p>
+        </div>
+      </div>
+    </section>
+    <section id="resources" class="platforms">
+      
+      <h3>Resources</h3>
+      <ul>
+        <li>If you want to embark on tech adventure like me or you need mentorship, feel free to contact <a href="hng.tech/learn" data-testid="hngLink">@HNG</a></li>
+        <li>Do you want to optimize your website SEO, <a href="keyword.dog" data-testid="keywordLink">keyword.dog</a> will help you get results</li>
+        <li>For extracting data online, from sites, contact <a href="scrapeanyweb.site" data-testid="scrapeanywebLink"> scapeanywebsite</a></li>
+      </ul>
+    </section>
+  </main>
+  <footer id="bottom" class="container">
+    <p>Please contant me at <img src="./images/envelope.svg" style="background-color: #fff;" alt="">
+    <a href="mailto:paokunade@gmail.com" data-testid="slackEmail" style="color: rgb(0, 136, 255);">paokunade@gmail.com</a></p>
+    <p>&lt;&lt; &copy; HNG2024 &gt;&gt;</p>
+  </footer>
+
+  <script src="index.js"></script>
+</body>
+</html>
